@@ -3,15 +3,23 @@
 import sys
 import random
 
+# ans is a variable that holds the boolean value "True"
 ans = True
 
+# while is both a conditial and an iteration.  It is known as a "Conditional Loop"
 while ans:
+    # question is a variable that stores the users text input
     question = input("Ask the magic 8 ball a question: (press enter to quit) ")
     
+    # answers is a variable that stores a random number between 1 & 20
     answers = random.randint(1,20)
-    
+    #print(answers)
+    # the following conditional stops the program when the user inputs no text 
     if question == "":
         sys.exit() 
+   
+    
+    # the following 20 statements are all conditionals that respond only to a specific number between 1 & 20 that is stored in the answers variable
     elif answers == 1:
         print("It is certain")    
     elif answers == 2:
